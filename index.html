@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Solo para ti</title>
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <article>
+    <div class="envelope-container">
+      <div class="message message-1" id="message-1">
+        <h1>Feliz día!</h1>
+        <p>Tengo un tesoro, una joya secreta que ningun otro corazón ha poseído. sin dudarlo te lo ofrezo,
+          como un regalo preciado, en este sobre lleno de emociones que aguarda suspiros y promesas.</p>
+      </div>
+      <div class="message message-2" id="message-2">
+        <h2>My heart</h2>
+      </div>
+      <button class="close-btn" id="close-btn" onclick="toggleEnvelope()">cerrar sobre</button>
+      <button class="heart-btn" id="heart-btn" onclick="toggleEnvelope()">&#10084;
+        <span class="heart-btn-text">click</span>
+      </button>
+      <div class="envelope-flap">
+        <svg class="inner">
+          <polygon class="inner-polygon" id="inner-polygon" points="175,150 350,0 0,0"></polygon>
+        </svg>
+        <svg class="outer" id="outer">
+          <polygon class="outer-polygon" points="175,150 350,300 0,300"></polygon>
+        </svg>
+        <div class="floating-hearts">
+          <div class="hearts-row row-11">
+            <div class="empty-space"></div> <!-- Empty space -->   
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i>            
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->            
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i>
+            <div class="empty-space"></div> <!-- Empty space -->   
+          </div>          
+          <div class="hearts-row row-10">
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i>
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i>           
+            <i class="ri-heart-fill"></i>
+          </div>
+          <div class="hearts-row row-9"> 
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i> 
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i> 
+            <i class="ri-heart-fill"></i>
+            <div class="empty-space"></div> <!-- Empty space -->
+            <div class="empty-space"></div> <!-- Empty space -->
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i> 
+            <i class="ri-heart-fill"></i>              
+            <i class="ri-heart-fill"></i>
+            <i class="ri-heart-fill"></i>         
+          </div>
+          <div class="hearts-row row-8">                   
+            <div><i class="ri-heart-fill"></i></div>                        
+            <div><i class="ri-heart-fill"></i></div>    
+            <div><i class="ri-heart-fill"></i></div>            
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-7">                
+            <div><i class="ri-heart-fill"></i></div>            
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>            
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-6">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-5">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>            
+          </div>
+          <div class="hearts-row row-4">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-3">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div> 
+          </div>
+          <div class="hearts-row row-2">
+            <div><i class="ri-heart-fill"></i></div>
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+          <div class="hearts-row row-1">
+            <div><i class="ri-heart-fill"></i></div>
+          </div>
+        </div>
+      </div>
+      <div class="envelope-base"></div>
+    </div>
+  </article>  
+  <script  src="./script.js"></script>
+</body>
+</html>
